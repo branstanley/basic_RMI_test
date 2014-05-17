@@ -9,7 +9,7 @@ import java.rmi.server.UnicastRemoteObject;
 
 /*******************************************************************************************
  * 
- * Just needs to be able to pass a remote object to the RMI Server.
+ * Sends a remote object (in this case of type taskObject) to the RMI Server
  * 
  *******************************************************************************************/
 

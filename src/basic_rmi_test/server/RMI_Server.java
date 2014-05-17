@@ -7,7 +7,9 @@ import java.rmi.registry.*;
 import java.rmi.server.UnicastRemoteObject;
 
 public class RMI_Server implements Compute{
-    
+    /*
+     * Processes remote objects on the server.
+     */
     public RMI_Server(){
         super();
     }
@@ -18,6 +20,10 @@ public class RMI_Server implements Compute{
     }
     
     public static void main(String[] args) {
+        /*
+         * not using a security manager, object definitions will currently be on server
+         * a policy file is needed to download unknown classes, will need to be worked on in the future
+         */
         //if(System.getSecurityManager() == null){
         //    System.setSecurityManager(new SecurityManager());
         //}
