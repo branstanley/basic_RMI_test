@@ -25,7 +25,7 @@ public class RMI_Server implements Compute{
         try{
             String name = "RMI_Server";
             Compute s = new RMI_Server();
-            Compute stub = (RMI_Server) UnicastRemoteObject.exportObject(s, 0);
+            Compute stub = (Compute) UnicastRemoteObject.exportObject(s, 0);
             
             Registry registry = LocateRegistry.getRegistry();
             registry.rebind(name, stub);
