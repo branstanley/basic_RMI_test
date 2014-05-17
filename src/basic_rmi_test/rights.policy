@@ -1,0 +1,5 @@
+grant codeBase "file:C:\Users\Outsider\Documents\GitHub\basic_RMI_test\src\basic_rmi_test\server"{ permission java.security.AllPermission;  };
+
+grant codeBase "file:C:\Users\Outsider\Documents\GitHub\basic_RMI_test\src\basic_rmi_test\client"{permission java.security.AllPermission;};
+
+grant codeBase "file:C:\Users\Outsider\Documents\GitHub\basic_RMI_test\src\basic_rmi_test"{permission java.security.AllPermission;};

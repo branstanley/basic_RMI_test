@@ -12,16 +12,18 @@ import java.rmi.server.UnicastRemoteObject;
  * Just needs to be able to pass a remote object to the RMI Server.
  * 
  *******************************************************************************************/
+
+
 public class First_Client {
     
     public static void main(String[] args) {
-        if(System.getSecurityManager() == null){
-            System.setSecurityManager(new SecurityManager());
-        }
+        //if(System.getSecurityManager() == null){
+        //    System.setSecurityManager(new SecurityManager());
+        //}
         
         try{
             String name = "RMI_Server";
-            Registry registry = LocateRegistry.getRegistry("127.0.0.1");
+            Registry registry = LocateRegistry.getRegistry();
             Compute comp = (Compute) registry.lookup(name);
             
             taskObject task = new taskObject();
